@@ -1,0 +1,18 @@
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 79%;
+    z-index: 1081 !important;
+    background-color: #fff;
+    box-shadow: 0em .09em .09em .09em rgba(0, 0, 0, .175);
+}
+
+
+.user-image{
+    position: fixed;
+    right: 1%;
+    top: 1%;
+}

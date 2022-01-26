@@ -1,0 +1,23 @@
+.sheet-submitted{
+    // width: 500px;
+    height: 150px;
+    border: .05em solid lightgray;
+    background-color: #fff;
+}
+
+.sheet-submitted:hover{
+    border: .05em solid skyblue;
+}
+
+// .view-submissions{
+//     display: flex;
+
+// }
+
+@media (min-width: 900px) {
+    .view-submissions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 16px;
+    }
+  }

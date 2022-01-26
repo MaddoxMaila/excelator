@@ -1,0 +1,48 @@
+
+<tr>
+
+    <td>
+        <span class="app-grey-text">
+            {{sheetRow.getDate()}}
+        </span>
+    </td>
+    <td>
+        <span class="app-small-text">
+            {{sheetRow.getClientName()}}
+        </span>
+    </td>
+    <td>
+        <span class="app-small-text">
+            {{sheetRow.getClientProjectName()}}
+        </span>
+    </td>
+    <td>
+        <span class="app-grey-text">
+            {{sheetRow.getStartTime()}}
+        </span>
+    </td>
+    <td>
+        <span class="app-grey-text">
+            {{sheetRow.getEndTime()}}
+        </span>
+    </td>
+    <td>
+        <span class="app-grey-text">
+            {{sheetRow.getTotalTime()}}
+        </span>
+    </td>
+    <td>
+       <span class="app-small-text">
+           {{sheetRow.getComment()}}
+       </span>
+    </td>
+    <td>
+        <span class="app-small-text">
+            {{sheetRow.getBill()}}
+        </span>
+    </td>
+    <td>
+        <ng-content></ng-content>
+    </td>
+
+</tr>

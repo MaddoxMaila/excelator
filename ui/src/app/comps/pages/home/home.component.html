@@ -1,0 +1,7 @@
+
+<div class="container">
+
+    <app-admin-home *ngIf="auth.isAdmin()"></app-admin-home>
+    <app-users-home *ngIf="!auth.isAdmin()"></app-users-home>
+
+</div>

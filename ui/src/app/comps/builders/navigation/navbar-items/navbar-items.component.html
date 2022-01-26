@@ -1,0 +1,17 @@
+
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        
+        <a [routerLink]="['/register']" class="btn btn-success" *ngIf="authIsAdmin">
+            Add Employee
+        </a>
+
+        <a class="btn btn-danger mr-2 ml-2" (click)="logout()">
+            Logout
+        </a>
+
+    </div>
+</div>

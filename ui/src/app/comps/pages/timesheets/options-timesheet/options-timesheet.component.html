@@ -1,0 +1,76 @@
+
+<div class="timesheet-side-options p-3" *ngIf="mTimeSheet">
+
+    <div class="media">
+        <div class="media-left">
+            <!-- <img [src]="image" height="80px" width="80px" /> -->
+            <app-user-image [user]="mTimeSheet?.getUser()"></app-user-image>
+        </div>
+        <div class="media-body pl-3 align-self-center">
+            <span class="app-max-text">
+                {{mTimeSheet?.getUser()?.getName()}} {{mTimeSheet?.getUser().getSurname()}}
+            </span>
+            <span class="app-grey-text-lg block-text">
+                @{{mTimeSheet?.getUser().getUsername()}}
+            </span>
+        </div>
+    </div>
+
+    <hr />
+
+    <center>
+        <div class="row">
+            <div class="col-md-6">
+
+                <span class="app-max-text">
+                    {{mTimeSheet?.getUser().getBill().billable_time}}
+                </span>
+                <span class="app-bold-text block-text">
+                    Total Billable Hours
+                </span>
+
+            </div>
+            <div class="col-md-6">
+                
+                <span class="app-max-text">
+                    {{mTimeSheet?.getUser().getBill().non_billable_time}}
+                </span>
+                <span class="app-bold-text block-text">
+                    Total Non Billable Hours
+                </span>
+
+            </div>
+        </div>
+    </center>
+
+    <hr />
+
+    <a class="btn btn-success btn-block btn-lg" routerLink="/timesheet/new">
+        <span class="material-icons-outlined i-align">
+            wrap_text
+        </span>
+        Add row  
+    </a>
+
+    <div class="wrap-root mt-2">
+        <a class="btn btn-success btn-block btn-lg" (click)="togglePopup('submission')">
+            Submit Timesheet
+        </a>
+
+        <app-popup headerText="Submit Timesheet" [style]="{display: popup.isOpen && popup.which == 'submission' ? 'block': 'none'}">
+
+            <center>
+                <span class="app-grey-text-lg mb-3" style="color: red;">
+                    Are you sure you want to submit this Timesheet
+                </span>
+            </center>
+
+            <button type="button"  style="color:white;" class="btn btn-warning mobile-share-control-btn yes" >Submit</button>
+            <button type="button" class="btn btn-danger mobile-share-control-btn no" (click)="togglePopup('')">Close</button>
+
+        </app-popup>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,13 @@
+
+.timesheet-side-options{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    width: 21%;
+    z-index: 1081;
+    border-left: .05em solid rgba($color: rgb(175, 156, 156), $alpha: .5);
+    border-top: .05em solid rgba($color: rgb(175, 156, 156), $alpha: .5);
+    background-color: #fff;
+
+}

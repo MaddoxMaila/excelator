@@ -1,0 +1,32 @@
+<div class="view-submissions" *ngIf="stage.loading == false">
+
+    <a class="sheet-submitted p-2" *ngFor="let submittedSheet of timesheetSubmissions" [routerLink]="['/timesheet', submittedSheet?.getUser().getId(), 'see']">
+
+        <div class="media">
+            <div class="media-left align-self-center">
+                <app-user-image [user]="submittedSheet.getUser()"></app-user-image>
+            </div>
+            <div class="media-body pl-2 align-self-center">
+                <span class="app-bolder-text">
+                    {{submittedSheet?.getUser().getName()}} {{submittedSheet?.getUser().getSurname()}}
+                </span>
+            </div>
+        </div>
+        <div class="sheet-metadata pt-3">
+
+            <span class="app-post-text">
+                {{submittedSheet.getComment()}}
+            </span>
+
+        </div>
+
+    </a>
+
+    <div class="sheet-submitted"></div>
+    <div class="sheet-submitted"></div>
+    <div class="sheet-submitted"></div>
+    <div class="sheet-submitted"></div>
+    <div class="sheet-submitted"></div>
+    
+
+</div>

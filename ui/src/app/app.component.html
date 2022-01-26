@@ -1,0 +1,26 @@
+<div class="root">
+
+  <app-desktop-navbar *ngIf="!auth.loading"></app-desktop-navbar>
+
+  <div class="space-large"></div>
+  <div class="space-large"></div>
+
+  <div class="row root-row">
+
+    <div class="col-md-3">
+
+      <app-side-nav></app-side-nav>
+
+      <app-toast></app-toast>
+      
+    </div>
+
+    <div class="col-md-9">
+
+      <router-outlet *ngIf="!auth.loading"></router-outlet>
+
+    </div>
+
+  </div>
+
+</div>

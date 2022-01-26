@@ -1,0 +1,52 @@
+
+
+<div class="side-nav">
+
+    <div class="app-name" style="padding-left: 6%;">
+        <br />
+        <app-name></app-name>
+    </div>
+
+    <div class="space-large"></div>
+
+    <ul class="list-group no-border">
+
+        <a routerLink="/home" routerLinkActive="active" class="list-group-item list-group-item-action no-border">
+            <span class="material-icons-outlined i-align i-size-36">
+                cottage
+            </span>
+            <span class="app-max-text">
+                Home
+            </span>
+        </a>
+        <a [routerLink]="['/timesheet', user?.getId(), 'see']" routerLinkActive="active" class="list-group-item list-group-item-action no-border">
+            <span class="material-icons-outlined i-align i-size-36">
+                edit_note
+            </span>
+            <span class="app-max-text">
+                Timesheet
+            </span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action no-border">
+            <span class="material-icons-outlined i-align i-size-36">
+                notifications
+            </span>
+            <span class="app-max-text">
+                Notifications
+            </span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action no-border">
+            <span class="material-icons-outlined i-size-36 i-align">
+                manage_search
+            </span>
+            <span class="app-max-text">
+                Advanced Search
+            </span>
+        </a>
+
+
+    </ul>
+
+    <hr />
+
+</div>

@@ -1,0 +1,16 @@
+.name-wrapper {
+    max-width: 250px;
+   /* padding: 1rem;*/
+    position: relative;
+    top : -3px;
+    background: linear-gradient(to right, #5bc0de, green, yellow);
+    padding: 3px;
+    border-radius: 6px;
+}
+  
+.name {
+    background-color: #fff;
+    color: #fff;
+    padding: 4px;/*2rem;*/
+    border-radius: 1.5px;
+}

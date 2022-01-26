@@ -1,0 +1,47 @@
+<div class="wrapper">
+
+    <div class="user-image">
+        <app-user-image [user]="user"></app-user-image>
+        <!-- <span class="app-bold-text">
+            {{user?.getName()}} {{user?.getSurname()}}
+        </span> -->
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5">
+
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+
+            <div class="wrap-header card">
+                
+                <div class="card-header no-border">
+
+                    <div class="media">
+                        <div class="media-body">
+                            <span class="app-max-text">
+                                Register New Employee
+                            </span>
+                        </div>
+                        <div class="media-right">
+                            <span class="app-grey-text">
+                                {{auth.regTimeKeeper}} of 3
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body no-border">
+                    <router-outlet></router-outlet>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+</div>

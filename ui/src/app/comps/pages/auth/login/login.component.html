@@ -1,0 +1,100 @@
+
+<div class="login-wrapper">
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-lg-5 m-auto">
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+            <div class="space-large visible-lg"></div>
+          <div class="wrapper">
+          <div class="card no-border no-pad">
+            
+            <div class="card-header no-border no-pad" style="padding-left: 12%;">
+    
+              <div class="media">
+                
+                <div class="media-body align-self-center">
+                  
+                  <span class="app-max-text">Login Into Your Excelator Account</span>
+                  <div class="space-small"></div>
+                  <span class="app-grey-text">Login With A Registered Excelator Account To Unlock Full Features</span>
+                </div>
+                <div class="media-right align-self-center">
+                    
+                    <!-- Button -->
+    
+                </div>
+              </div>
+            </div>
+            <div class="card-body no-border no-pad">
+              <br />
+              <br />
+              <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+              <!-- Email -->
+              <div class="input-group input-group-md">
+                  <!-- <label class="col-md-3 col-form-label text-md-right"></label> -->
+                  <div class="input-group-prepend no-border no-bg">
+                    <span class="material-icons-outlined i-size-24 input-group-text no-border no-bg">
+                        alternate_email
+                      </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    ngModel
+                    >
+              </div>
+
+              <br />
+              <!-- Password -->
+              <div class="input-group input-group-md">
+                <!-- <label class="col-md-3 col-form-label text-md-right"></label> -->
+                <div class="input-group-prepend no-border no-bg">
+                    <span class="material-icons-outlined i-size-24 input-group-text no-border no-bg">lock</span>
+                  </div>
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  ngModel
+                >
+              </div>
+
+                <br />
+              <div class="input-group row" style="padding-left: 15%;">
+                  <!-- Submit Button -->
+
+                  <div class="media">
+                    <div class="align-self-center">
+                      <app-button [loading]="loading" [class]="'btn-primary btn-md btn-block'" [type]="'submit'" [loading]="false" [click]="null">
+                        Login
+                      </app-button>
+                    </div>
+                    <div class="media-body align-self-center pl-4">
+                      <span *ngIf="error.error" class="e-text">
+                        {{error.message}}
+                      </span>
+                    </div>
+                  </div>
+    
+              </div>
+            </form>
+  
+            </div>
+    
+          </div>
+        </div>
+    
+      </div>
+      <div class="col-md-4"></div>
+     </div>
+
+</div>

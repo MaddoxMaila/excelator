@@ -1,0 +1,37 @@
+<div class="username-wrapper">
+
+    <span class="app-bolder-text">
+        Employee Username
+    </span>
+    <div class="space-large visible-lg"></div>
+    <form #basicForm="ngForm">
+        <div class="form-row">
+          <div class="col">
+            <label>Username</label>
+            <input type="text" class="form-control" [value]="this.username" placeholder="Employee Username" name="username" required ngModel>
+          </div>
+          <div class="col">
+            <label>Role</label>
+            <select class="form-control" name="type" required ngModel>
+                <option selected value="user">Normal</option>
+                <option value="admin">Admin</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <br />
+      <div class="media">
+          <div class="media-left">
+            <button class="btn btn-warning">
+                Back
+            </button>
+          </div>
+          <div class="media-body"></div>
+          <div class="media-right">
+              <button class="btn btn-success" (click)="collectUsernameForm(basicForm)">
+                  Next
+              </button>
+          </div>
+      </div>
+
+</div>

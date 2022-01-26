@@ -1,0 +1,183 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@media only screen and (max-width: 700px){}
+
+
+.open{
+  display: block;
+}
+
+.mobile-share-control-btn.yes{
+  width: 66%;
+}
+.mobile-share-control-btn.no{
+  width: 30%;
+  margin-left: 10px;
+}
+
+.list-group-item.active{
+  background-color: rgba(211, 211, 211, .100);
+  border:.05em solid #007bff;
+  border-radius: 4px;
+}
+
+.app-grey-text{
+    color: rgba(170, 184, 194, 1);
+    font-size: 10pt;
+  }
+  .app-grey-text-sm{
+    color: rgba(170, 184, 194, 1);
+    font-size: 07pt;
+  }
+  .app-grey-text-lg{
+    color: rgb(170, 184, 194, 1);
+    font-size: 10.5pt;
+  }
+  .app-text-link{
+    color: #5bc0de;
+    font-size: 8pt;
+  }
+
+  .app-small-text{
+    line-height : 90%;
+    color: #14171a;
+    font-size: 10pt;
+  }
+
+  .app-bold-text{
+    color: #14171a;
+    font-size: 09pt;
+    font-weight: 600;
+  }
+  .app-bolder-text{
+    color: #14171a;
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .app-mid-text{
+    color: #14171a;
+    font-size: 11pt;
+    font-weight: 550;
+  }
+
+  .app-max-text{
+    color: #14171a;
+    font-size: 15pt;
+    font-weight: 600;
+  }
+
+  spacer{
+    width : 100%;
+    height: 0px;
+    margin:0;
+    padding:0;
+  }
+  .space-small{
+    width: 100%;
+    height: 5px;
+  }
+  .space-medium{
+    width: 100%;
+    height: 18px;
+  }
+  .space-large{
+    width: 100%;
+    height: 30px;
+  }
+  .space-mega{
+    width: 100%;
+    height: 100px;
+  }
+
+  .btn-default{
+    border: 0.05em solid #5bc0de;
+    color: #5bc0de;
+  }
+
+  .btn-info,
+  .btn-primary,
+  .btn-danger,
+  .btn-success{
+    border : 0;
+  }
+
+  .btn.btn-primary,
+  .btn.btn-info{
+
+    background-color : #5bc0de;
+
+  }
+
+  .btn > .btn-text,
+  .btn{
+    font-weight : 650;
+  }
+
+  .no-border{
+    border : 0;
+  }
+  
+  .no-pad{
+    padding : 0;
+  }
+
+  .no-bg{
+    background-color: transparent;
+  }
+  
+  .card-header{
+    background-color : transparent;
+    border-bottom : .04em solid rgba(211, 211, 211, .100);
+  }
+  
+  .card{
+    box-shadow : 0 0 0 0 transparent;
+  }
+  
+  .main-layout{
+    min-height : 100%;
+  }
+  .block-text{
+  
+    display : block;
+    line-height : 1;
+  
+  }
+
+
+  .dbg{
+    border:1em solid red;
+  }
+
+  .i-size-18{
+    font-size: 18px;
+    color: initial;
+  }
+
+  .i-size-24{
+    font-size: 24px;
+    color: initial;
+  }
+
+  .i-size-36{
+    font-size: 34px;
+    color: initial;
+  }
+
+  .i-align{
+    position: relative;
+    top: 7px;
+  }
+
+  a{
+    outline-width:  0;
+    outline-color: transparent;
+    cursor: pointer;
+  }
+
+  .table td,
+  .table th{
+    padding: .50rem
+  }

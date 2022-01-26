@@ -1,0 +1,7 @@
+
+<button class="btn" (click)="click()" [class]="class" [type]="type">
+
+    <span *ngIf="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <ng-content *ngIf="!loading"></ng-content>
+
+</button>

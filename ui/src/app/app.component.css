@@ -1,0 +1,12 @@
+.container {
+  margin-top: 30px;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+.root-row{
+  position: relative;
+  right: 3%;
+}

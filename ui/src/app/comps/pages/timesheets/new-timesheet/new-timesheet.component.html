@@ -1,0 +1,65 @@
+<div class="card">
+    <div class="card-header">
+
+        <div class="media">
+            <div class="media-left align-self-center">
+                <app-back-btn></app-back-btn>
+            </div>
+            <div class="media-body pl-3 align-self-center pb-1">
+                <span class="app-max-text">
+                    Add New Timesheet Entry
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+
+        <form #timesheetForm="ngForm" (ngSubmit)="addTimeSheetEntry(timesheetForm)">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                  <label>Comment</label>
+                  <textarea class="form-control" placeholder="Wassup...?" ngModel required name="comment"></textarea>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="client-name">Client Name</label>
+                <input type="text" class="form-control" id="client-name" placeholder="Client Name" ngModel required name="client_name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="client-project-name">Client Project Name</label>
+                <input type="text" class="form-control" id="client-project-name" placeholder="Client Project Name" ngModel required name="project_name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project-description">Project Description</label>
+              <input type="text" class="form-control" id="project-description" placeholder="Project Description" ngModel required name="description">
+            </div>
+
+            <div class="form-row">
+        
+              <div class="form-group col-md-6">
+                <label for="billing">Billing</label>
+                <select id="billing" class="form-control" ngModel required name="bill">
+                  <option selected value="Non-Billable">Non-Billable</option>
+                  <option value="Billable">Billable</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="start-time">Start Time</label>
+                <input type="text" class="form-control" id="start-time" placeholder="Start Time" ngModel required name="start_time">
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="end-time">End Time</label>
+                <input type="text" class="form-control" id="end-time" placeholder="End Time" ngModel required name="end_time">
+              </div>
+
+            </div>
+            <app-button [loading]="respCrumbs.loading" [class]="'btn-success btn-md btn-block'" [type]="'submit'" [loading]="false" [click]="null">
+              Save Timesheet Entry
+            </app-button>
+          </form>
+
+    </div>
+</div>
