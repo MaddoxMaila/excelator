@@ -7,6 +7,7 @@ click
 cryptography
 Faker
 Flask
+Flask-Cors
 Flask-JWT
 Flask-JWT-Extended
 flask-orator
