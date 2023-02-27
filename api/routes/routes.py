@@ -26,7 +26,7 @@ def register_routes(api) -> None:
         api ([type]): flask_restful Api instance
     """
 
-    for route, routeResource in zip(routes.keys(), routes.values()):
+    for route, routeResource in routes.items():
 
         '''
             Add the routes and resource to the application
